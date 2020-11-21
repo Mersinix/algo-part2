@@ -1,0 +1,107 @@
+ALGORITHM Problem 1 (solution1)
+VAR
+    tab1: ARRAY-OF INTEGER [i];
+    tab2: ARRAY-OF-INTEGER [j];
+    i,j,sum: INTEGER
+BEGIN
+    sum=0;
+    for (ComparingArray){// a function that comparing element by element of the tow arrays 
+        IF (elt of tab[i] != elt of tab[j]) THEN
+            sum := dif-elt1 
+        ELSE
+            write("nothing is diffrent")
+        END_IF
+    }
+    for (ComparingArray){// a function that comparing element by element of the tow arrays 
+        IF (elt of tab[j] != elt of tab[i]) THEN
+            sum := sum + dif-elt2 
+        ELSE
+            write("nothing is diffrent")
+        END_IF
+    }
+    IF (sum != 0) THEN
+        write("the sum is equal to" +sum)
+    ELSE
+        write("both array's are equal")
+    END_IF
+END 
+
+-------
+ALGORITHM Problem 1 (solution2)
+VAR
+    htab: HASH_TABLE<String,integer>;
+    tab1: ARRAY-OF INTEGER [i];
+    tab2: ARRAY-OF-INTEGER [j];
+
+BEGIN
+     
+    htab {
+        list1 = tab1[hash(i) % tab1.length]
+        List2 = tab2[hash(j) % tab2.length]
+        return list1.htab + list2.htab
+        }
+
+    for(index: from 0 to last index){
+        if htab.lookup(unique-value)==1{
+            sum := inique-value
+        }else {
+            write("there is no distinct values")
+        }
+         return sum;
+    }
+
+END
+------------------------------------------------------------------------
+
+ALGORITHM Problem 2 (solution1)
+VAR
+    tab1: ARRAY-OF INTEGER [i];
+    tab2: ARRAY-OF-INTEGER [j];
+    i,j,sum: INTEGER
+BEGIN
+    sum=0;
+    for (ComparingArray){// a function that comparing element by element of the tow arrays 
+        IF (elt of tab[i] === elt of tab[j]) THEN
+            sum := same-elt1 
+        ELSE
+            write("nothing is diffrent")
+        END_IF
+    }
+    for (ComparingArray){// a function that comparing element by element of the tow arrays 
+        IF (elt of tab[j] === elt of tab[i]) THEN
+            sum := sum + same-elt2 
+        ELSE
+            write("nothing is diffrent")
+        END_IF
+    }
+    IF (sum != 0) THEN
+        write("the sum is equal to" +sum)
+    ELSE
+        write("both array's are equal")
+    END_IF
+END 
+-------
+ALGORITHM Problem 2 (solution2)
+VAR
+    htab: HASH_TABLE<String,integer>;
+    tab1: ARRAY-OF INTEGER [i];
+    tab2: ARRAY-OF-INTEGER [j];
+
+BEGIN
+     
+    htab {
+        list1 = tab1[hash(i) % tab1.length]
+        List2 = tab2[hash(j) % tab2.length]
+        return list1.htab + list2.htab
+        }
+
+    for(index: from 0 to last index){
+        if htab.lookup(same-value)==1{
+            sum := same-value
+        }else {
+            write("there is no values are the same")
+        }
+         return sum;
+    }
+
+END
